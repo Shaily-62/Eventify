@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Event details | Eventify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <div class="min-h-screen flex flex-col">
+    <header class="bg-white/90 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800">
+      <div class="max-w-5xl mx-auto px-4 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-sky-600 dark:text-sky-400 font-semibold">Eventify</p>
+          <h1 class="mt-2 text-3xl font-bold">Event details</h1>
+          <p class="mt-1 text-slate-600 dark:text-slate-400">Review the event, RSVP, edit or delete the plan.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="index.html" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">Back to events</a>
+     
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-5xl mx-auto px-4 py-8">
+      <div id="eventDetails" class="card"></div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/eventView.js"></script>
+</body>
+</html>

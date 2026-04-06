@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Create Event | Eventify</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body class="min-h-screen bg-slate-50 text-slate-900 dark:bg-slate-950 dark:text-slate-100">
+  <div class="min-h-screen flex flex-col">
+    <header class="bg-white/90 dark:bg-slate-900/90 border-b border-slate-200 dark:border-slate-800">
+      <div class="max-w-4xl mx-auto px-4 py-5 flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4">
+        <div>
+          <p class="text-sm uppercase tracking-[0.3em] text-sky-600 dark:text-sky-400 font-semibold">Eventify</p>
+          <h1 class="mt-2 text-3xl font-bold" id="formTitle">Create Event</h1>
+          <p class="mt-1 text-slate-600 dark:text-slate-400">Use the form to add a new event or edit an existing one.</p>
+        </div>
+        <div class="flex flex-wrap items-center gap-3">
+          <a href="index.html" class="inline-flex items-center justify-center rounded-lg border border-slate-300 bg-white px-4 py-2 text-sm font-semibold text-slate-900 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">Back to events</a>
+
+        </div>
+      </div>
+    </header>
+
+    <main class="flex-1 max-w-4xl mx-auto px-4 py-8">
+      <div class="card">
+        <form id="eventForm" class="space-y-6">
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-200" for="title">Title</label>
+            <input id="title" type="text" required placeholder="Event Title" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 shadow-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-200" for="date">Date</label>
+            <input id="date" type="date" required class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 shadow-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100" />
+          </div>
+          <div>
+            <label class="block text-sm font-semibold text-slate-700 dark:text-slate-200" for="description">Description</label>
+            <textarea id="description" rows="5" placeholder="Add details about your event" class="mt-2 w-full rounded-xl border border-slate-300 bg-white px-4 py-3 text-slate-900 shadow-sm outline-none transition focus:border-sky-500 focus:ring-2 focus:ring-sky-200 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100"></textarea>
+          </div>
+          <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+            <button id="submitButton" type="submit" class="rounded-xl bg-sky-600 px-6 py-3 text-sm font-semibold text-white shadow-sm transition hover:bg-sky-500">Create event</button>
+            <a href="index.html" class="inline-flex items-center justify-center rounded-xl border border-slate-300 bg-white px-6 py-3 text-sm font-semibold text-slate-900 shadow-sm hover:bg-slate-100 dark:border-slate-700 dark:bg-slate-900 dark:text-slate-100 dark:hover:bg-slate-800">Cancel</a>
+          </div>
+        </form>
+      </div>
+    </main>
+  </div>
+
+  <script src="js/app.js"></script>
+  <script src="js/api.js"></script>
+  <script src="js/createEvent.js"></script>
+</body>
+</html>
