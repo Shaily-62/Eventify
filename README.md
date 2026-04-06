@@ -57,6 +57,3 @@ If you want to use a local server for better URL support, use a simple tool like
 - Data persists across refreshes, but not across devices.
 - The app uses URL parameters to navigate to event detail and edit pages.
 
-## License
-
-This project is free to use and modify.
